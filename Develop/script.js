@@ -18,7 +18,6 @@ let addUppercaseLetters = confirm("want uppercase letter?");
 let addNumber = confirm("Want Numbers?");
 let addSpecalchar = confirm("Want special characters?");
 
-
 // write function generatePassword
 function generatePassword() {
   //stores my password//
@@ -53,8 +52,15 @@ function generatePassword() {
       password.push(randomSpecialcharacters);
     }
   }
-  
+  function shuffleArray(password) {
+    for(i = 0; i < passwordLength; i++) {
+      let randomIndex = Math.floor(Math.random() * passwordLength);
+      let Password = passwordLength[randomIndex]
+      password.push(Password);
+    }
+  }
   return password;
+  
 }
 //sends password to function call
 generatePassword();
