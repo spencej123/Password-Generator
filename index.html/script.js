@@ -1,4 +1,4 @@
-// Assignment Code
+ // Assignment Code
 let generateBtn = document.querySelector("#generate");
 
 //Define Variable
