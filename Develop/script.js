@@ -7,11 +7,10 @@ let uppercaseLetters = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "
 let numbers = [0, 1, 2, 3, 4 , 5, 6, 7, 8, 9];
 let specialCharacters = ["!", "@", "#", "$", "%", "&", "*", ";"];
 
-//Promt the user
 //get user input
-let passwordLength = prompt(
-  "Enter number length of password between 8 and 128"
-);
+  //Promt the user
+  let passwordLength = prompt("Enter number length of password between 8 and 128")
+
 passwordLength = parseInt(passwordLength, 10);
 let addLowercaseLetters = confirm("want lower case letter?");
 let addUppercaseLetters = confirm("want uppercase letter?");
@@ -52,14 +51,8 @@ function generatePassword() {
       password.push(randomSpecialcharacters);
     }
   }
-  function shuffleArray(password) {
-    for(i = 0; i < passwordLength; i++) {
-      let randomIndex = Math.floor(Math.random() * passwordLength);
-      let Password = passwordLength[randomIndex]
-      password.push(Password);
-    }
-  }
-  return password;
+  Math.random(password);
+return password;
   
 }
 //sends password to function call
